@@ -134,24 +134,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- TODO tentar arrumar orientação -->
         <EditText
             android:id="@+id/messageEt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="top"
             android:inputType="textMultiLine"
             android:lines="14" />
     </LinearLayout>
 
-    <!-- Colocar nova restrição para o botão ficar linkado mais acima   -->
     <LinearLayout
         android:id="@+id/buttonLl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageLl">
 
         <Button
             android:id="@+id/cleanBt"
